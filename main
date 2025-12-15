@@ -1,0 +1,27 @@
+package project_1;
+
+
+public class main {
+	public static void main (String[]args)  {
+		book book1 = new book ("ince mehmet ","publisher a",1990," yasar ",300);
+		book book2 = new book("ince mehmet 2 ", "publisher b", 1992,"yasar",450);
+		
+		magazine magazine1 = new magazine("magazine c", "publisher d",2002, 18, "may");
+		magazine magazine2 = new magazine("magazince e ","publisher f ", 2001, 17,"march");
+		
+		dvd dvd1 = new dvd("dvd j"," publisher jb ", 2025, 173,"can saglam");
+		
+		
+		book1.displayDetails();
+		book2.displayDetails();
+		magazine1.displayDetails();
+		magazine2.displayDetails();
+		dvd1.displayDetails();
+		
+		 System.out.println(book1.isPublishedBefore(2000));
+	        System.out.println(book2.isPublishedBefore(1995));
+	        System.out.println(magazine1.isPublishedBefore(1999));
+	        System.out.println(dvd1.isPublishedBefore(2010));
+	    }
+	
+	}
