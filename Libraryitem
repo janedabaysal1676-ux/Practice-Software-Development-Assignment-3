@@ -1,0 +1,20 @@
+package project_1;
+
+public abstract class Libraryitem {
+	protected String title;
+    protected String publisher;
+    protected int year;
+    
+    public Libraryitem(String title, String publisher, int year) {
+    	this.title = title;
+    	this.publisher = publisher;
+    	this.year = year;
+    	}
+    
+    
+    public boolean isPublishedBefore(int y) {
+        return this.year < y;
+    }
+
+       public abstract void displayDetails();
+}
