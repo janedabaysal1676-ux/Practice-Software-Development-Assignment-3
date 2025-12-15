@@ -1,0 +1,28 @@
+package project_1;
+
+public class dvd extends Libraryitem {
+	
+	
+	private int duration;
+	private String director;
+	
+	public dvd(String title,String publisher, int year, int duration, String director)  {
+		super(title,publisher, year );
+		this.duration = duration;
+		this.director = director;
+		
+}
+
+@Override
+
+public void displayDetails() {
+
+	  System.out.println ("dvd");
+	  System.out.println ("title:" + title);
+	  System.out.println ("publisher:" + publisher);
+	  System.out.println ("year:" + year);
+	  System.out.println ("duration:"  +  duration + " minutes");
+	  System.out.println (" director:" +  director);
+	  System.out.println ();
+       }
+}
