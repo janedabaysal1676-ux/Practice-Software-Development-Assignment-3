@@ -1,5 +1,6 @@
 package project_1;
 
+
 public class magazine extends Libraryitem {
 	private int issueNumber;
 	private String month;
