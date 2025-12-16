@@ -17,12 +17,12 @@ public class dvd extends Libraryitem {
 
 public void displayDetails() {
 
-	  System.out.println ("dvd");
-	  System.out.println ("title:" + title);
-	  System.out.println ("publisher:" + publisher);
-	  System.out.println ("year:" + year);
-	  System.out.println ("duration:"  +  duration + " minutes");
-	  System.out.println (" director:" +  director);
+	  System.out.println ("Dvd");
+	  System.out.println ("Title:" + title);
+	  System.out.println ("Publisher:" + publisher);
+	  System.out.println ("Year:" + year);
+	  System.out.println ("Duration:"  +  duration + " minutes");
+	  System.out.println ("Director:" +  director);
 	  System.out.println ();
        }
 }
