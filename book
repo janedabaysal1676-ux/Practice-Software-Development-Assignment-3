@@ -1,27 +1,27 @@
 package project_1;
 
-public class magazine extends Libraryitem {
-	private int issueNumber;
-	private String month;
-	
-	public magazine(String title, String publisher, int year, int issueNumber, String month) {
-		  super(title,publisher, year );
-		  this.issueNumber = issueNumber;
-		  this.month = month;
-	  }
+public class book extends Libraryitem {
+  private String author;
+  private int numPages;
+  
+  
+  
+  public book(String title, String publisher, int year, String author, int numPages) {
+	  super(title,publisher, year );
+	  this.author = author;
+	  this.numPages = numPages;
+  }
 
+  @Override
+  
+  public void displayDetails() {
 
-	  @Override
-	  
-	  public void displayDetails() {
-
-		  System.out.println ("magazine");
-		  System.out.println ("title:" + title);
-		  System.out.println ("publisher:" + publisher);
-		  System.out.println ("year:" + year);
-		  System.out.println ("issueNumber:"  + issueNumber);
-		  System.out.println (" month:" + month);
-		  System.out.println ();
-	  }
-	}
-
+	  System.out.println ("Book");
+	  System.out.println ("Title:" + title);
+	  System.out.println ("Publisher:" + publisher);
+	  System.out.println ("Year:" + year);
+	  System.out.println ("Author:"+ author);
+	  System.out.println ("Number of pages:" + numPages);
+	  System.out.println ();
+  }
+}
